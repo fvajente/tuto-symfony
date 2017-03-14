@@ -1,0 +1,23 @@
+{# src/TestfabriceBundle/Resources/views/Advert/add.html.twig #}
+
+{% extends "TestfabriceBundle::layout.html.twig" %}
+
+{% block title %}
+ Ajouter une annonce - {{ parent() }}
+{% endblock %}
+ 
+
+{% block testfabrice_body %}
+
+  <h2>Ajouter une annonce</h2>
+
+  {{ include("TestfabriceBundle:Advert:form.html.twig") }}
+
+  <p>
+   Attention : cette annonce sera ajoutée directement
+    sur la page d'accueil après validation du formulaire.
+  </p>
+
+ 
+
+{% endblock %}

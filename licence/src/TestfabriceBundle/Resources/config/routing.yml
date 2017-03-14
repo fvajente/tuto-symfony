@@ -1,0 +1,40 @@
+testfabrice_home:
+    path:      /{page}
+    defaults:
+        _controller: TestfabriceBundle:Advert:index
+        page: 1
+    requirements:
+        page: \d*
+
+# page de visualisation d'une annonce
+
+testfabrice_view:
+    path:    /advert/{id}
+    defaults: { _controller: TestfabriceBundle:Advert:view }
+    requirements:
+        id: \d+
+
+#ajout, modification et suppression
+testfabrice_add:
+    path:    /add
+    defaults: { _controller: TestfabriceBundle:Advert:add }
+
+testfabrice_edit:
+    path:    /edit/{id}
+    defaults: { _controller: TestfabriceBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+testfabrice_delete:
+    path:    /delete/{id}
+    defaults:  { _controller: TestfabriceBundle:Advert:delete }
+    requirements:
+        id: \d+
+
+#testfabrice_view_slug:
+ #   path:    /platform/{year}/{slug}.{format}
+  #  defaults: {_controller: TestfabriceBundle:Advert:viewSlug, format: html}
+   # requirements:
+    #    id: \d+
+     #  year:    \d{4}
+      #  format:  html|xml

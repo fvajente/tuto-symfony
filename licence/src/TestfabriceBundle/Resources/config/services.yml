@@ -1,0 +1,6 @@
+# src/OC/PlatformBundle/Resources/config/services.yml
+
+services:
+    TestfabriceBundle.antispam:
+        class: TestfabriceBundle\Antispam\fbAntispam
+        arguments: [@mailer, %locale%, 5] 

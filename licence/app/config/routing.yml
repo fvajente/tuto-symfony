@@ -1,0 +1,5 @@
+testfabrice:
+    resource: "@TestfabriceBundle/Resources/config/routing.yml"
+    prefix:    /monbundle
+
+
